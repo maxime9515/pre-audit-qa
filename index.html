@@ -210,8 +210,8 @@
       </div>
       <div class="card">
         <div class="num">02</div>
-        <h3>Clean coverage trims the fee by <span class="pct">15–25%</span></h3>
-        <p>When core fund flows already have passing, readable tests, the audit scope narrows and the bill follows. Pre-audit QA is the cheapest line item you will ever add to that budget.</p>
+        <h3>Clean coverage can typically trim the fee by ~<span class="pct">15–25%</span></h3>
+        <p>When core fund flows already have passing, readable tests, the audit scope narrows and the bill follows. This is a common industry estimate, not a guarantee — but pre-audit QA is the cheapest line item you will ever add to that budget.</p>
       </div>
       <div class="card">
         <div class="num">03</div>
@@ -233,7 +233,7 @@
       <div class="card offer">
         <span class="label"><b>A</b> · Fixed scope</span>
         <h3>Audit-Readiness Sprint</h3>
-        <p>Your protocol prepared for audit: core fund-flow coverage mapped, real-wallet E2E and money-math boundary tests written and running against a forked mainnet, with a coverage report ready to hand to auditors.</p>
+        <p>Your protocol prepared for audit: core fund-flow coverage mapped, real-wallet E2E and money-math boundary tests written and running, with a coverage report ready to hand to auditors. Today the wallet flows run against an injected EIP-1193 provider; a live MetaMask boots and injects a genuine provider (one test passing), and the forked-mainnet run is in progress.</p>
         <div class="meta">
           <span class="tag">2–3 weeks</span>
           <span class="tag price">$3–8k</span>
@@ -275,7 +275,7 @@
         <div class="stat"><b>42</b><span>money-math tests</span></div>
         <div class="stat"><b>5</b><span>E2E tests, run out of the box</span></div>
       </div>
-      <p>A starter kit showing the approach in full: money-math boundary and precision tests written as plain assertions, plus end-to-end wallet flows (connect → switch network → sign → send) driven through an injected EIP-1193 driver against a bundled demo dApp — hermetic, no secrets, no network. The real MetaMask / forked-mainnet path is documented and wired next. Everything is open — read it, run it, judge the coverage yourself.</p>
+      <p>A starter kit showing the approach in full: money-math boundary and precision tests written as plain assertions, plus end-to-end wallet flows (connect → switch network → sign → send) driven through an injected EIP-1193 driver against a bundled demo dApp — hermetic, no secrets, no network. Real-wallet E2E is wired up: a live MetaMask boots and injects a genuine <code>isMetaMask</code> provider (one test passes); the forked-mainnet run is in progress. Everything is open — read it, run it, judge the coverage yourself.</p>
       <a class="repo" href="https://github.com/maxime9515/web3-qa-starter" target="_blank" rel="noopener">
         github.com/maxime9515/web3-qa-starter
         <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5"/></svg>
